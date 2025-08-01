@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Denzxd - Neon Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top left, #0f0f1f, #000000 80%);
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 26px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #00ffe7, #ff00c8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 10px #00ffe7, 0 0 20px #ff00c8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+      background-color: #080808;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid #222;
+    }
+
+    nav a {
+      color: #0ff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #0ff;
+      color: #000;
+      text-shadow: none;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #0ff;
+      border-left: 5px solid #f0f;
+      padding-left: 15px;
+      font-size: 22px;
+      margin-bottom: 30px;
+      text-shadow: 0 0 10px #f0f, 0 0 20px #0ff;
+    }
+
+    .card {
+      background: rgba(20, 20, 30, 0.8);
+      border: 1px solid #0ff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff inset;
+      transition: 0.4s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      box-shadow: 0 0 15px #ff00c8, 0 0 30px #00ffe7;
+    }
+
+    .icon {
+      font-size: 18px;
+      margin-right: 10px;
+      color: #0ff;
+    }
+
+    ul {
+      padding-left: 25px;
+      color: #ccc;
+    }
+
+    a {
+      color: #0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #080808;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Denzxd ✦ Menyediakan</header>
+
+  <nav>
+    <a href="#jasa">Jasa</a>
+    <a href="#kursus">Open Murid</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#information">Information</a>
+  </nav>
+
+  <section id="jasa">
+    <h2>💼 Jasa </h2>
+
+    <div class="card">
+      <span class="icon">📱</span> Pembuatan APK Android
+      <ul>
+        <li>Aplikasi cek banned WhatsApp</li>
+        <li>Fake chat WA, IG, Telegram</li>
+        <li>Injector tool game (FF, ML, PUBG)</li>
+        <li>DLL</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="icon">🎨</span> Custom APK & Reskin
+      <ul>
+        <li>Ganti nama, logo, warna, tema</li>
+        <li>Rename apk atau SC Dll</li>
+        <li>Ubah fitur, tambahkan halaman</li>
+        <li>Desain UI modern sesuai request</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="icon">🛠️</span> Build & Debug Project
+      <ul>
+        <li>Build AIDE / Android Studio</li>
+        <li>Fix error Sketchware / Java</li>
+        <li>Convert project jadi APK siap publish</li>
+      </ul>
+    </div>
+      </ul>
+    </d>
+    
+    <div class="card">
+      <span class="icon">🚔</span> Mod Gta
+      <ul>
+        <li>jasa mod gta sesuai request an</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kursus">
+    <h2>🎓 Open Murid / Kursus</h2>
+
+    <div class="card">
+      <span class="icon">🧠</span> Belajar Buat Aplikasi Android
+      <ul>
+        <li>Dari nol (tanpa pengalaman)</li>
+        <li>Belajar Java + XML dasar</li>
+        <li>Sketchware Pro / AIDE hingga lancar</li>
+        <li>Bimbingan project sampai publish</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <span class="icon">💻</span> Kelas Privat
+      <ul>
+        <li>Via WhatsApp / Telegram</li>
+        <li>Jam fleksibel, fokus 1-on-1</li>
+        <li>Support konsultasi saat buat aplikasi</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>📞 Kontak</h2>
+
+    <div class="card">
+      <p><span class="icon">📲</span> WhatsApp: <a href="https://wa.me/62895402418193" target="_blank">Klik untuk chat</a></p>
+      <p><span class="icon">📱</span>Telegram: <a href="https://t.me/denzdev" target="_blank">Klik untuk chat</a></p>
+      <p><span class="icon">📧</span> Email: denzxd.dev@gmail.com</p>
+  </section>
+  
+  <section id="information">
+    <h2>Information</h2>
+    
+    <div class="card">
+      <p><span class="icon">🎤</span> Informasi atau list lengkap hubungi kontak saya</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Denzxd • 
+  </footer>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+
+</body>
+</html>
